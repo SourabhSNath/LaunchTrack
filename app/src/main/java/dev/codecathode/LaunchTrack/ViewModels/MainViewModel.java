@@ -18,6 +18,20 @@ import retrofit2.Callback;
 import retrofit2.Response;
 
 
+/**
+ *
+ * The data should actually come to viewModel from the Repository class, which I have not used here.
+ * Todo: Get data from repository instead of directly implementing it here in the viewModel
+ *
+ * That is both launchPagedList and MissionResponse should originate from Repository Class, and viewModel should just supply
+ * it to the fragments.
+ *
+ *
+ * communication between Fragments where I am passing through 'getSelected()' doesn't need repository class.
+ *
+ */
+
+
 public class MainViewModel extends ViewModel {
 
     public LiveData<PagedList<Launch>> launchPagedList;

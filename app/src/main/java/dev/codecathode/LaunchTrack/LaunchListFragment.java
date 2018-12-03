@@ -25,8 +25,6 @@ import dev.codecathode.LaunchTrack.ViewModels.MainViewModel;
 import io.supercharge.shimmerlayout.ShimmerLayout;
 
 public class LaunchListFragment extends Fragment {
-    public static final String DETAIL_TAG = "detailTag";
-    private int selectedOption;
 
     @BindView(R.id.contentList)
     ConstraintLayout contentList;
@@ -38,6 +36,10 @@ public class LaunchListFragment extends Fragment {
     private Unbinder unbinder;
     private LaunchAdapter adapter = new LaunchAdapter();
     private MainViewModel launchListViewModel;
+
+    /**
+     *launchListFragment and detailsFragment communicate through viewModel. This is way easier to manage
+     */
 
 
     @Nullable
@@ -103,14 +105,14 @@ public class LaunchListFragment extends Fragment {
 
 
     @Override
-    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
+    public void onCreateOptionsMenu(@NonNull Menu menu,@NonNull MenuInflater inflater) {
         menu.clear();
         inflater.inflate(R.menu.menu_launch_list, menu);
         super.onCreateOptionsMenu(menu, inflater);
     }
 
     @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
 
         switch (item.getItemId()) {
             case R.id.deleteAll:

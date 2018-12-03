@@ -19,7 +19,6 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MapStyleOptions;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.material.card.MaterialCardView;
-import com.jaredrummler.cyanea.app.CyaneaFragment;
 
 import org.threeten.bp.LocalDateTime;
 import org.threeten.bp.LocalTime;
@@ -35,6 +34,7 @@ import java.util.Objects;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.core.widget.NestedScrollView;
+import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProviders;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -55,7 +55,7 @@ import dev.codecathode.LaunchTrack.Database.Network.NetworkState;
 import dev.codecathode.LaunchTrack.ViewModels.MainViewModel;
 
 
-public class LaunchDetailsFragment extends CyaneaFragment {
+public class LaunchDetailsFragment extends Fragment {
 
     //Auto generated with ButterKnife and plugin
     @BindView(R.id.launchName)
@@ -195,11 +195,12 @@ public class LaunchDetailsFragment extends CyaneaFragment {
 
     /**
      * This entire details layout needs to be replaced with RecyclerView with different types of Item,
-     * right now it has performance issues when there are too many payloads.
+     * right now it has performance issues when too many Payloads are loaded.
      * <p>
-     * So it is better to replaces the entire nestedScrollView with Recyclerview, and make everything under it as items of the recyclerView
+     * So it is better to replaces the entire nestedScrollView with RecyclerView, and make everything under it as items of the recyclerView
      * <p>
      * So DetailsMain would be first item, Location Info would be second Item and so on...
+     * and this also includes the icons, titles. Everything needs to be part of a recyclerView in order to reduce the stutter
      */
 
 

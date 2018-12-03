@@ -73,7 +73,7 @@ public class LaunchBoundaryCallback extends PagedList.BoundaryCallback<Launch> {
         initialLoad.postValue(NetworkState.LOADING);
         networkState.postValue(NetworkState.LOADING);
 
-        Log.d("BUB", "onZeroItemsLoaded: called");
+//        Log.d("BUB", "onZeroItemsLoaded: called");
         appExecutors.networkIO().execute(() -> getLaunchDataService.getLaunchResult(today.toString(), 20, 0)
                 .enqueue(new Callback<LaunchDbResponse>() {
                     @Override
@@ -114,13 +114,13 @@ public class LaunchBoundaryCallback extends PagedList.BoundaryCallback<Launch> {
 
         if (isLoading) return;
         isLoading = true;
-        Log.d("BUB", "onItemAtEndLoaded: Items");
+//        Log.d("BUB", "onItemAtEndLoaded: Items");
 
         networkState.postValue(NetworkState.LOADING);
 
         appExecutors.networkIO().execute(() -> {
 
-            Log.d("TAG", "onItemAtEndLoaded: " + lastOffset);
+//            Log.d("TAG", "onItemAtEndLoaded: " + lastOffset);
             getLaunchDataService.getLaunchResult(today.toString(), 20, lastOffset)
                     .enqueue(new Callback<LaunchDbResponse>() {
                         @Override

@@ -1,14 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.preference.PreferenceScreen
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <SwitchPreferenceCompat
         app:key="notifications"
-        app:title="Enable message notifications"/>
+        app:title="Enable this switch for no reason" />
 
     <Preference
         app:key="feedback"
-        app:title="Send feedback"
-        app:summary="Report technical issues or suggest new features"/>
+        app:summary="Report technical issues or suggest new features or just message me :') "
+        app:title="Send feedback">
+
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="mailto:my@email.address">
+
+        </intent>
+
+    </Preference>
 
 </androidx.preference.PreferenceScreen>
