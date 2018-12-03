@@ -1,5 +1,6 @@
 # LaunchTrack
-Incomplete. Project to get Space launches.
+Incomplete Project to get Space launches. 
+There are left out features, bugs and performance issues under some conditions.
 
 Libraries used:
 
