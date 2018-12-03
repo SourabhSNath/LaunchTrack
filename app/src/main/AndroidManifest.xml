@@ -24,7 +24,7 @@
         <!--Todo add your own map key-->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="" />
+            android:value="AIzaSyDCcknloWKg2hLbRwEs0-G1c4Ua2papgKQ" />
 
         <activity
             android:name="dev.codecathode.LaunchTrack.LaunchListActivity"

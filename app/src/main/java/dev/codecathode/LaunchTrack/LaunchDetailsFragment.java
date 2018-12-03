@@ -192,6 +192,17 @@ public class LaunchDetailsFragment extends CyaneaFragment {
 
     private MainViewModel detailViewModel;
 
+
+    /**
+     * This entire details layout needs to be replaced with RecyclerView with different types of Item,
+     * right now it has performance issues when there are too many payloads.
+     * <p>
+     * So it is better to replaces the entire nestedScrollView with Recyclerview, and make everything under it as items of the recyclerView
+     * <p>
+     * So DetailsMain would be first item, Location Info would be second Item and so on...
+     */
+
+
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -708,7 +719,7 @@ public class LaunchDetailsFragment extends CyaneaFragment {
     }
 
     @Override
-    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
+    public void onCreateOptionsMenu(@NonNull Menu menu, MenuInflater inflater) {
         //Clear Menu, else two copies of the menu option would appear on the Toolbar
         menu.clear();
         super.onCreateOptionsMenu(menu, inflater);

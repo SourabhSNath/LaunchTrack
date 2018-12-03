@@ -1,8 +1,4 @@
-<<<<<<< HEAD:app/src/main/java/dev/codecathode/LaunchTrack/Database/Model/Pad.java
 package dev.codecathode.LaunchTrack.Database.Model;
-=======
-package dev.codecathode.launchlist.Model;
->>>>>>> e764902... Map RecyclerView implemented:app/src/main/java/dev/codecathode/launchlist/Model/Pad.java
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
