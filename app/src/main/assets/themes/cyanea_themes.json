@@ -1,0 +1,76 @@
+
+[
+  {
+    "theme_name": "Default",
+    "base_theme": "LIGHT",
+    "primary": "#7971ea",
+    "primary_dark": "#7971ea",
+    "primary_light": "#7971ea",
+    "accent": "#ff7e5f",
+    "accent_dark": "#ffffff",
+    "accent_light": "#ff7e5f",
+    "background": "#FFFFFF",
+    "background_dark": "#FFD4D4D4",
+    "background_light": "#fffbf9",
+    "menu_icon_light": "#ffffff",
+    "menu_icon_dark": "#000000"
+  },
+
+  {
+    "theme_name": "Default Dark",
+    "base_theme": "DARK",
+    "primary": "#7971ea",
+    "primary_dark": "#7971ea",
+    "primary_light": "#7971ea",
+    "accent": "#ff7e5f",
+    "accent_dark": "#ffffff",
+    "accent_light": "#ff7e5f",
+    "background": "#000000",
+    "background_light": "#181818",
+    "background_dark": "#000000",
+    "menu_icon_light": "#ffffff",
+    "menu_icon_dark": "#000000"
+  },
+
+  {
+    "theme_name": "Default Black",
+    "base_theme": "DARK",
+    "primary": "#7971ea",
+    "primary_dark": "#7971ea",
+    "primary_light": "#7971ea",
+    "accent": "#ff7e5f",
+    "accent_dark": "#ffffff",
+    "accent_light": "#ff7e5f",
+    "background": "#000000",
+    "background_dark": "#FFD4D4D4",
+    "background_light": "#000000",
+    "menu_icon_light": "#ffffff",
+    "menu_icon_dark": "#000000"
+  },
+  {
+    "theme_name": "Cyanea",
+    "base_theme": "LIGHT",
+    "primary": "#FFEE3868",
+    "primary_dark": "#FFCA2F58",
+    "primary_light": "#FFF0557E",
+    "accent": "#FF93C43E",
+    "accent_dark": "#FF7CA634",
+    "accent_light": "#FFA3CC5A",
+    "background": "#FFFAFAFA",
+    "background_dark": "#FFD4D4D4",
+    "background_light": "#FFFAFAFA"
+  },
+  {
+    "theme_name": "Ashen",
+    "base_theme": "DARK",
+    "primary": "#FFFC474A",
+    "primary_dark": "#FFD63C3E",
+    "primary_light": "#FFFC6265",
+    "accent": "#FF3BB7CB",
+    "accent_dark": "#FF329BAC",
+    "accent_light": "#FF58C1D2",
+    "background": "#FF151919",
+    "background_dark": "#FF111515",
+    "background_light": "#FF383B3B"
+  }
+]

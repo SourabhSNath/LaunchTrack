@@ -1,0 +1,125 @@
+<<<<<<< HEAD:app/src/main/java/dev/codecathode/LaunchTrack/Database/Model/Rocket.java
+package dev.codecathode.LaunchTrack.Database.Model;
+=======
+package dev.codecathode.launchlist.Model;
+>>>>>>> e764902... Map RecyclerView implemented:app/src/main/java/dev/codecathode/launchlist/Model/Rocket.java
+
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
+
+import java.util.List;
+
+public class Rocket {
+
+    @SerializedName("id")
+    @Expose
+    private Integer id;
+    @SerializedName("name")
+    @Expose
+    private String name;
+    @SerializedName("configuration")
+    @Expose
+    private String configuration;
+    @SerializedName("familyname")
+    @Expose
+    private String familyname;
+    @SerializedName("agencies")
+    @Expose
+    private List<Agency> agencies = null;
+    @SerializedName("wikiURL")
+    @Expose
+    private String wikiURL;
+    @SerializedName("infoURLs")
+    @Expose
+    private List<String> infoURLs = null;
+    @SerializedName("infoURL")
+    @Expose
+    private String infoURL;
+    @SerializedName("imageSizes")
+    @Expose
+    private List<Integer> imageSizes = null;
+    @SerializedName("imageURL")
+    @Expose
+    private String imageURL;
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getConfiguration() {
+        return configuration;
+    }
+
+    public void setConfiguration(String configuration) {
+        this.configuration = configuration;
+    }
+
+    public String getFamilyname() {
+        return familyname;
+    }
+
+    public void setFamilyname(String familyname) {
+        this.familyname = familyname;
+    }
+
+    public List<Agency> getAgencies() {
+        return agencies;
+    }
+
+    public void setAgencies(List<Agency> agencies) {
+        this.agencies = agencies;
+    }
+
+    public String getWikiURL() {
+        return wikiURL;
+    }
+
+    public void setWikiURL(String wikiURL) {
+        this.wikiURL = wikiURL;
+    }
+
+    public List<String> getInfoURLs() {
+        return infoURLs;
+    }
+
+    public void setInfoURLs(List<String> infoURLs) {
+        this.infoURLs = infoURLs;
+    }
+
+    public String getInfoURL() {
+        return infoURL;
+    }
+
+    public void setInfoURL(String infoURL) {
+        this.infoURL = infoURL;
+    }
+
+    public List<Integer> getImageSizes() {
+        return imageSizes;
+    }
+
+    public void setImageSizes(List<Integer> imageSizes) {
+        this.imageSizes = imageSizes;
+    }
+
+    public String getImageURL() {
+        return imageURL;
+    }
+
+    public void setImageURL(String imageURL) {
+        this.imageURL = imageURL;
+    }
+
+}

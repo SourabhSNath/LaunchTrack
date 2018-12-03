@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--main-->
+
+    <!--Use such color naming for cyanea library-->
+    <!--Check Assets folder for cyanea_themes.json, this is where you create new themes-->
+    <color name="cyanea_accent_reference">#ff7e5f</color>
+    <color name="cyanea_primary_reference">#7971ea</color>
+    <color name="cyanea_accent_dark_reference">#ff7e5f</color>
+    <color name="cyanea_background_light">#ffffff</color>
+    <color name="cyanea_background_light_lighter">#fffbf9</color>
+    <color name="cyanea_menu_icon">#000000</color>
+
+    <color name="temp">#181818</color>
+
+    <color name="drawerShadowWhite">#83ffffff</color>
+    <color name="darker">#4a000000</color>
+
+    <color name="buttonIconColor">#FF000000</color>
+
+
+    <color name="cardBackground">#fffbf9</color>
+    <color name="cardMain">#fbfbff</color>
+
+    <color name="textPrimary">#000000</color>
+
+
+    <!--Shimmer RecyclerView-->
+    <color name="skeletonColor">#a2dfdfdf</color>
+    <color name="shimmerColor">#fffbf9</color>
+
+
+
+
+
+
+</resources>
+
+    <!--<color name="colorPrimary">#7971ea</color>-->
+    <!--<color name="colorPrimaryDark">#7971ea</color>-->
+    <!--<color name="colorSecondary">#ff7e5f</color>-->
+    <!--<color name="colorAccent">#ff7e5f</color>-->
+    <!--<color name="navigationBarColor">#292929</color>-->
